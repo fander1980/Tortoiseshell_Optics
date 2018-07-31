@@ -1,0 +1,375 @@
+/* Styles for the entire HTML doc */
+
+html,
+body {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: 'Helvetica', sans-serif;
+  height: 100%;
+}
+
+/* Styles for the background image */
+
+.header {
+  height: 50%;
+  background-image: url("../images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 20% center;
+}
+
+/* Styles for the container class */
+
+.container1 {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  top: 1rem;
+  display: flex;
+}
+
+/* Styles for the nav element */
+
+.container1 nav {
+  width: 100%;
+  background-color: cadetblue;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Styles the first div in the nav element named logo and text */
+
+.logo_and_text {
+  display: flex;
+  margin: 1rem auto 1rem 2rem;
+  width: 100%;
+}
+
+/* Styles for logo and company brand name */
+
+nav .logo_and_text .navbar_icon {
+  margin-right: 1rem;
+}
+
+nav .logo_and_text .navbar_icon img {
+  height: 1.5rem;
+  display: block;
+  margin: auto auto;
+}
+
+nav .logo_and_text .company_name {
+  margin: auto 0;
+}
+
+#menu {
+  display: none;
+}
+
+/* Styles the second div in the nav element named links */
+
+.container1 nav .links {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+/* Styles for the navigational links */
+
+.container1 nav .links ul {
+  list-style: none;
+  /*  background-color: black;*/
+  display: flex;
+  justify-content: flex-end
+}
+
+.container1 nav .links ul li {
+  display: inline-block;
+  margin: 0 2rem 0 0;
+}
+
+.container1 nav .links ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.container1 nav .links ul li a:hover {
+  color: black;
+  opacity: .7;
+  text-shadow: 0px 2px white;
+}
+
+/* Styles for jumbotron */
+
+.jumbotron {
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 10rem;
+  position: absolute;
+  right: 6rem;
+  opacity: .6;
+}
+
+.jumbotron h2 {
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+/* Styles for the container2 class */
+
+.container2 {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Styles for services section */
+
+#services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem auto 0;
+  height: 8rem;
+}
+
+/* Styles for glyphicons section */
+
+.glyphicons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Styles to space out center div */
+
+.glyphicons_center {
+  margin: 0 6rem;
+}
+
+/* Styles for all three icons */
+
+.paper_icon img {
+  width: 3.5rem;
+}
+
+.ruler_icon img {
+  width: 5rem;
+}
+
+.truck_icon img {
+  width: 5rem;
+}
+
+/* Styles for information section*/
+
+.information {
+  display: flex;
+  /*  justify-content: space-around;*/
+  margin: 3rem auto 5rem auto;
+}
+
+.center {
+  width: 5%;
+}
+
+.left_right {
+  width: 11%;
+}
+
+/* Styles for philosophy div */
+
+.philosophy {
+  width: 35%;
+  flex-grow: 1;
+}
+
+.philosophy h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  display: inline-block;
+  width: 10rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Styles for appointments div */
+
+.appointments {
+  width: 35%;
+  flex-grow: 1;
+  margin-left: 5%;
+}
+
+.appointments h3 {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  display: inline-block;
+  width: 10rem;
+  color: white;
+  text-transform: uppercase;
+}
+
+/* Styles for the container3 class */
+
+.container3 {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: azure;
+}
+
+/* Styles for copyright section */
+
+.copyright_section {
+  display: flex;
+  padding: 4rem 0 4rem 4rem;
+}
+
+.copyright_icon {
+  margin: 0 1rem 0 0;
+}
+
+.copyright_icon img {
+  height: 1.5rem;
+}
+
+
+
+@media only screen and (max-width: 980px) {
+
+  .header {
+    height: 22rem;
+  }
+
+  .jumbotron {
+    top: 1rem;
+    opacity: .6;
+  }
+
+  .jumbotron h2 {
+    font-size: 1.33rem;
+    padding: 0.75rem 4rem;
+  }
+
+  .container1 {
+    position: static;
+  }
+
+  .logo_and_text {
+    flex-grow: 1;
+  }
+
+  /* Styles the second div in the nav element named links */
+  .container1 nav .links {
+    flex-grow: 1;
+  }
+}
+
+
+@media only screen and (max-width: 680px) {
+
+
+  .header {
+    height: 17rem;
+    position: relative;
+  }
+
+  #hide {
+    display: none;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  .links {
+    display: flex;
+    justify-content: flex-end
+  }
+
+  .jumbotron {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: .6;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 12rem;
+  }
+
+  .jumbotron h2 {
+    font-size: 1rem;
+    padding: 0;
+  }
+
+  /* Styles for glyphicons section */
+  #services {
+    display: flex;
+    flex-flow: column;
+    margin: 3.77rem 0;
+    height: 100%;
+  }
+
+  .glyphicons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .glyphicons:nth-last-of-type(2) {
+    margin: 1.54rem 0;
+  }
+
+  .products {
+    font-size: 0.77rem;
+  }
+
+  .information {
+    display: flex;
+    /*  justify-content: space-around;*/
+    flex-direction: column;
+  }
+
+  .center,
+  .left_right {
+    display: none;
+  }
+
+  /* Styles for philosophy div */
+  .philosophy,
+  .appointments {
+    width: auto;
+    font-size: 0.77rem;
+    margin: 0 0 4rem 0;
+  }
+
+  .philosophy h3,
+  .appointments h3 {
+    margin-bottom: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  .copyright_section {
+    display: block;
+    padding: 0 4rem 4rem 4rem;
+  }
+
+  .copyright_icon {
+    margin: 0;
+    text-align: center;
+  }
+
+  .copy {
+    display: none;
+  }
+
+}
